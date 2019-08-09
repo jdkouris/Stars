@@ -29,7 +29,7 @@ class StarController {
         return star
     }
     
-    func saveToPersistentStore() {
+    private func saveToPersistentStore() {
         guard let url = persistentFileURL else { return }
         
         do {
@@ -41,7 +41,7 @@ class StarController {
         }
     }
     
-    func loadFromPersistentStore() {
+    private func loadFromPersistentStore() {
         let fileManager = FileManager.default
         guard let url = persistentFileURL, fileManager.fileExists(atPath: url.path) else { return }
         
