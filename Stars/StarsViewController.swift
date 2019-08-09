@@ -40,7 +40,6 @@ class StarsViewController: UIViewController {
         tableview.reloadData()
     }
     
-
 }
 
 extension StarsViewController: UITableViewDataSource {
@@ -56,6 +55,5 @@ extension StarsViewController: UITableViewDataSource {
         
         return cell
     }
-    
     
 }
