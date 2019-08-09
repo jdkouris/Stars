@@ -45,11 +45,14 @@ class StarsViewController: UIViewController {
 
 extension StarsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return starController.stars.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StarCell", for: indexPath)
+        
+        cell.textLabel?.text = starController.stars[indexPath.row].name
+        cell.detailTextLabel?.text = "\(starController.stars[indexPath.row].distance) light years away"
         
         return cell
     }
