@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				293828A722FD0CA4008CB721 /* StarController.swift */,
+				293828A122FD0AA0008CB721 /* StarsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				294801A822FD04D400F24316 /* AppDelegate.swift */,
-				293828A122FD0AA0008CB721 /* StarsViewController.swift */,
 				293828A622FD0BCD008CB721 /* Model */,
 				293828AB22FD11FF008CB721 /* View */,
 				293828A522FD0BC6008CB721 /* Controller */,
