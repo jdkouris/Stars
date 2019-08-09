@@ -27,8 +27,9 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StarCell", for: indexPath)
-        cell.textLabel?.text = "Hi"
-        cell.detailTextLabel?.text = "Hi"
+        
+        
+        
         return cell
     }
     
