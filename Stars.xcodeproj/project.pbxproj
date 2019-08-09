@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		293828A222FD0AA0008CB721 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293828A122FD0AA0008CB721 /* StarsViewController.swift */; };
 		293828A422FD0BBC008CB721 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293828A322FD0BBC008CB721 /* Star.swift */; };
+		293828A822FD0CA4008CB721 /* StarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293828A722FD0CA4008CB721 /* StarController.swift */; };
 		294801A922FD04D400F24316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294801A822FD04D400F24316 /* AppDelegate.swift */; };
 		294801AE22FD04D400F24316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294801AC22FD04D400F24316 /* Main.storyboard */; };
 		294801B022FD04D500F24316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294801AF22FD04D500F24316 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		293828A122FD0AA0008CB721 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 		293828A322FD0BBC008CB721 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		293828A722FD0CA4008CB721 /* StarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarController.swift; sourceTree = "<group>"; };
 		294801A522FD04D400F24316 /* Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294801A822FD04D400F24316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294801AD22FD04D400F24316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		293828A522FD0BC6008CB721 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				293828A122FD0AA0008CB721 /* StarsViewController.swift */,
+				293828A722FD0CA4008CB721 /* StarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -76,6 +78,7 @@
 				293828A622FD0BCD008CB721 /* Model */,
 				293828A522FD0BC6008CB721 /* Controller */,
 				294801AC22FD04D400F24316 /* Main.storyboard */,
+				293828A122FD0AA0008CB721 /* StarsViewController.swift */,
 				294801AF22FD04D500F24316 /* Assets.xcassets */,
 				294801B122FD04D500F24316 /* LaunchScreen.storyboard */,
 				294801B422FD04D500F24316 /* Info.plist */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				293828A422FD0BBC008CB721 /* Star.swift in Sources */,
+				293828A822FD0CA4008CB721 /* StarController.swift in Sources */,
 				293828A222FD0AA0008CB721 /* StarsViewController.swift in Sources */,
 				294801A922FD04D400F24316 /* AppDelegate.swift in Sources */,
 			);

@@ -37,7 +37,9 @@ extension StarsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StarCell", for: indexPath)
+        
+        return cell
     }
     
     
