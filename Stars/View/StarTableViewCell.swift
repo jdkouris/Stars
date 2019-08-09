@@ -9,6 +9,9 @@
 import UIKit
 
 class StarTableViewCell: UITableViewCell {
+    
+    // @IBOutlet weak var nameLabel: UILabel!
+    // @IBOutlet weak var distancelabel: UILabel!
 
     var star: Star? {
         didSet {
@@ -18,6 +21,9 @@ class StarTableViewCell: UITableViewCell {
     
     private func updateViews() {
         guard let star = star else { return }
+        
+        // nameLabel.text = star.name
+        // distanceLabel.text = "\(star.distance)"
     }
 
 }
