@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StarsViewController.swift
 //  Stars
 //
 //  Created by John Kouris on 8/8/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StarsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension StarsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -35,7 +35,7 @@ extension ViewController: UITableViewDataSource {
     
 }
 
-extension ViewController: UITableViewDelegate {
+extension StarsViewController: UITableViewDelegate {
     
 }
 
