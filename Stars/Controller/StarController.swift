@@ -30,6 +30,16 @@ class StarController {
         return star
     }
     
+    func listStars() -> String {
+        var output = ""
+        
+        for star in stars {
+            output += "Star: \(star.name) Distance: \(star.distanceDescription).\n"
+        }
+        
+        return output
+    }
+    
     private func saveToPersistentStore() {
         guard let url = persistentFileURL else { return }
         
