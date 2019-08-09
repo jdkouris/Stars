@@ -14,6 +14,8 @@ class StarsViewController: UIViewController {
     @IBOutlet weak var distanceTextField: UITextField!
     @IBOutlet weak var tableview: UITableView!
     
+    let starController = StarController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +27,17 @@ class StarsViewController: UIViewController {
     }
     
     @IBAction func createStar(_ sender: UIButton) {
+        guard let name = nameTextField.text,
+            let distanceString = distanceTextField.text,
+            !name.isEmpty,
+            !distanceString.isEmpty,
+            let distance = Double(distanceString) else { return }
         
+        starController.createStar(named: name, withDistance: distance)
+        nameTextField.text = ""
+        distanceTextField.text = ""
+        nameTextField.becomeFirstResponder()
+        tableview.reloadData()
     }
     
 
