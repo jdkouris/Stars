@@ -23,7 +23,7 @@ class StarsViewController: UIViewController {
     }
     
     @IBAction func printStars(_ sender: UIButton) {
-        
+        print(starController.listStars())
     }
     
     @IBAction func createStar(_ sender: UIButton) {
